@@ -1,0 +1,94 @@
+body {
+  padding-top: 55px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+/*header*/
+.navbar,
+header {
+  background-color: rgb(187, 187, 187);
+}
+.navbar-brand {
+  padding-left: 10px;
+  font-weight: 700;
+}
+.navbar-nav {
+  padding-right: 15px;
+}
+a.nav-link {
+  margin-left: 20px;
+  margin-right: 20px;
+  font-weight: 600;
+}
+
+/*main*/
+main {
+  background-color: rgb(207, 207, 207);
+  position: absolute;
+  top: 0;
+}
+article {
+  background-color: cadetblue;
+}
+#hello {
+  font-family: "Times New Roman", Times, serif;
+}
+#presentation {
+  background-color: indianred;
+  padding-top: 60px;
+}
+/*cta*/
+.card {
+  max-width: 600px;
+}
+.bi-github {
+  color: #333;
+}
+.bi-linkedin {
+  color: #0077b5;
+}
+.bi-instagram {
+  color: #c13584;
+}
+.bi-envelope-fill {
+  color: gray;
+}
+.card-footer {
+  padding: 8px 0 0 0;
+}
+/*transition royalblue*/
+#blue {
+  font-weight: auto;
+  font-variant: normal;
+  color: auto;
+  transition: font-weight 1s ease-in, color 1s ease-in;
+}
+#blue:hover {
+  font-weight: bolder;
+  color: #122c65;
+}
+/*animation popupcard*/
+.card {
+  transform: scale(0);
+  animation: popupcard 8s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+@keyframes popupcard {
+  0% {
+    transform: scale(0);
+  }
+  25% {
+    transform: scale(0);
+  }
+  92% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.98);
+  }
+}
+/*footer*/
+#footer {
+  padding: 15px 0 2px 0;
+}
