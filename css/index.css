@@ -1,9 +1,15 @@
+:root {
+  --background: #b9c0b1;
+  --highlight: #9ba591;
+  --text: #11111;
+  --headingsbold: #748067;
+}
 body {
   margin: 0;
   padding-top: 55px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  background-color: #b9c0b1;
+  background-color: var(--background);
 }
 /*text*/
 h1,
@@ -12,10 +18,10 @@ h3,
 h4,
 h5,
 h6 {
-  color: rgba(76, 76, 76);
+  color: var(--headingsbold);
 }
 .bi:hover {
-  color: rgb(155, 165, 145) !important;
+  color: var(--highlight) !important;
 }
 .no_underline {
   text-decoration: none;
@@ -23,12 +29,12 @@ h6 {
 /*header*/
 .navbar,
 header {
-  background-color: #b9c0b1;
+  background-color: var(--background);
 }
 .navbar-brand {
   padding-left: 10px;
   font-weight: 700;
-  color: rgb(76, 76, 76) !important;
+  color: var(--headingsbold) !important;
 }
 .navbar-nav {
   padding-right: 15px;
@@ -37,19 +43,19 @@ a.nav-link {
   margin-left: 20px;
   margin-right: 20px;
   font-weight: 600;
-  color: rgb(76, 76, 76) !important;
+  color: var(--headingsbold) !important;
 }
 a.nav-link:hover {
-  color: rgb(155, 165, 145) !important;
+  color: var(--highlight) !important;
 }
 /*main*/
 main {
   position: absolute;
   top: 0;
-}
+} /*
 article {
   background-color: #fafafa;
-}
+}*/
 #hello {
   font-family: "Times New Roman", Times, serif;
 }
@@ -63,32 +69,30 @@ article {
 .bi-linkedin {
   color: #0077b5;
 }
-.bi-instagram {
-  color: #c13584;
-}
 .bi-envelope-fill {
-  color: gray;
+  color: rgba(76, 76, 76);
 }
-.card-footer {
-  padding: 8px 0 0 0;
-  background-color: snow;
+.card-text {
+  background-color: #fafafa;
 }
 /*transition royalblue*/
 #blue {
   font-weight: normal;
   font-variant: normal;
   color: currentColor;
-  transition: font-weight 1s ease-in, color 1s ease-in;
+  transition: font-weight 1s ease-in, color 1s ease-in, font-variant 1s ease-in;
 }
 #blue:hover {
   font-weight: bolder;
+  font-variant: small-caps;
   color: #122c65;
 }
 /*animation popupcard*/
 .card {
   width: 400px;
-  max-width: 600px;
-  background-color: snow;
+  min-width: 200px;
+  max-width: 60vw;
+  background-color: #fafafa;
   box-shadow: 0px 0px 0px 0px rgba(76, 76, 76, 0.29);
   transform: scale(0);
   animation: popupcard 8s;
@@ -115,19 +119,23 @@ article {
   padding-left: 15px;
 }
 /*showcase*/
-article#showcase {
-  background-color: #b9c0b1;
-}
 .showcase_img {
   object-fit: contain;
 }
+#showcase_mini > img {
+  max-height: 20vh;
+  width: 100vw;
+}
+.showcase_img_mini {
+  object-fit: cover;
+}
 /*contact*/
 .megaphone {
-  color: rgb(155, 165, 145);
+  color: var(--headingsbold);
   font-size: 100pt;
 }
 .megaphone_mini {
-  color: rgb(155, 165, 145);
+  color: var(--headingsbold);
   font-size: 30pt;
 }
 .contact {
@@ -144,9 +152,6 @@ article#showcase {
   color: #212529;
 }
 .contact_link:hover {
-  color: rgb(155, 165, 145) !important;
+  color: var(--highlight) !important;
 }
 /*footer*/
-#footer {
-  padding: 15px 0 2px 0;
-}

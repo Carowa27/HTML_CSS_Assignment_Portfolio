@@ -24,7 +24,7 @@
     <!-- my css -->
     <link rel="stylesheet" href="/css/index.css" />
 
-    <title>CW Portfolio</title>
+    <title>Carolina Warntorp</title>
   </head>
   <body>
     <!-- header -->
@@ -32,7 +32,7 @@
       <!-- navigation -->
       <nav class="navbar navbar-expand-lg navbar-light">
         <section class="container-fluid">
-          <a class="navbar-brand" href="/index.html">Carolina Warntorp</a>
+          <a class="navbar-brand" href="/index.html">Carolina</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -62,24 +62,25 @@
     </header>
 
     <!-- main container -->
-    <main class="container-fluid gx-3">
-      <section class="row justify-content-around p-3">
+    <main class="container-fluid gx-3 p-3">
+      <section class="row justify-content-around">
         <!-- about me -->
         <article
-          class="col-12 col-xl-7 vh-100 d-flex flex-column"
+          class="col-12 col-lg-7 vh-100 d-flex flex-column"
           id="about_me"
         >
           <h2 class="text-center fw-bolder" id="hello">Hello and Welcome!</h2>
-          <h3>Name: Carolina</h3>
+          <h3>My name is Carolina Warntorp</h3>
           <p>
             I am 30 years old and live with my husband and daughter. I have a
             business were I make stickers to use when you plan. It has been a
             big experiance and a fun way to make design.
           </p>
-          <p>
-            A (kinda) new interest/hobby of mine is to create websites. I have
-            made them mostly in wordpress earlier. But this one for example is
-            all my design.
+          <p class="d-md-flex d-none d-sm-none">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque ipsa
+            eius ratione in natus temporibus ex nesciunt sit error nisi nemo
+            laboriosam tempora repudiandae earum at, aliquam ullam reprehenderit
+            illo?
           </p>
           <h4>Three fast facts</h4>
           <ul>
@@ -89,10 +90,10 @@
           </ul>
           <!-- card -->
           <section class="mt-auto card m-5 mx-auto">
-            <section class="card-body">
+            <er class="card-body">
               <h5 class="card-title">Intrested?</h5>
               <p class="card-text">Connect with me!</p>
-              <footer class="card-footer d-flex justify-content-evenly">
+              <section class="card-text d-flex justify-content-evenly p-0 m-0">
                 <a href="https://github.com/Carowa27" title="Github; Carowa27"
                   ><i class="bi bi-github"></i
                 ></a>
@@ -102,37 +103,42 @@
                   ><i class="bi bi-linkedin"></i
                 ></a>
                 <a
-                  href="https://www.instagram.com/think.round/"
-                  title="Instagram; ThinkRound"
-                  ><i class="bi bi-instagram"></i
-                ></a>
-                <a
                   href="mailto:carolina.warntorp@medieinstitutet.se"
                   title="Email me"
                   ><i class="bi bi-envelope-fill"></i
                 ></a>
-              </footer>
+              </section>
             </section>
           </section>
         </article>
         <!-- showcase -->
         <aside
-          class="row col-12 col-md-6 col-xl-5 align-items-center pt-4 vh-100"
+          class="row col-12 col-lg-5 align-items-center pt-4 vh-100 d-lg-flex d-none d-sm-none"
           id="showcase"
         >
           <img
             src="/assets/Profile_square.jpg"
             alt="bild"
-            class="img-fluid showcase_img p-5 h-50"
+            class="img-fluid showcase_img p-3 h-50"
           /><img
             src="/assets/Profile_square.jpg"
             alt="bild"
-            class="img-fluid showcase_img p-5 h-50"
+            class="img-fluid showcase_img p-3 h-50"
+          />
+        </aside>
+        <aside
+          class="row col-12 col-lg-5 p-0 d-sm-flex d-lg-none"
+          id="showcase_mini"
+        >
+          <img
+            class="showcase_img_mini p-0"
+            src="/assets/20220902_105331.jpg"
+            alt="bild"
           />
         </aside>
         <!-- resume -->
-        <section id="resume" class="row min-vh-100 p-5">
-          <article class="col-12 col-md-6 col-xl-6 p-3">
+        <section id="resume" class="row min-vh-100 m-0 p-0">
+          <article class="col-12 col-md-6 col-lg-6 p-3 py-2">
             <h2><i>Resume</i></h2>
             <h3>Studies</h3>
             <p><u>Medieinstitutet</u> <i>2022-2024</i></p>
@@ -160,7 +166,7 @@
               <li>Digitalt skapande 2</li>
             </ul>
           </article>
-          <article class="col-12 col-md-6 col-xl-6 pt-5 p-3">
+          <article class="col-12 col-md-6 col-lg-6 pt-5 p-3">
             <h3>Work</h3>
             <p><b>Graphic designer and founder</b> at Cruwa design</p>
             <i>2020-06</i>
@@ -186,19 +192,19 @@
         </section>
         <!-- megaphone -->
         <figure
-          class="col-3 col-md-5 col-xl-5 d-flex justify-content-center align-items-center"
+          class="col-3 col-md-5 col-lg-5 d-flex justify-content-center align-items-center"
           id="img"
         >
-          <p class="px-5 m-0 d-lg-flex d-none d-sm-none">
+          <p class="px-5 m-0 d-md-flex d-none d-sm-none">
             <i class="bi bi-megaphone-fill megaphone"></i>
           </p>
-          <p class="px-5 m-0 d-sm-flex d-lg-none">
+          <p class="px-5 m-0 d-sm-flex d-md-none">
             <i class="bi bi-megaphone-fill megaphone_mini"></i>
           </p>
         </figure>
         <!-- contact me -->
         <article
-          class="col-9 col-md-7 col-xl-7 p-3 d-flex flex-column justify-content-between"
+          class="col-9 col-md-7 col-lg-7 p-3 d-flex flex-column justify-content-between"
           id="contact_me"
         >
           <p class="contact">Contact me</p>
@@ -207,7 +213,7 @@
             title="Github; Carowa27"
             class="no_underline"
             ><i
-              class="bi bi-github contact_icon d-none d-sm-none d-lg-inline-block"
+              class="bi bi-github contact_icon d-none d-sm-none d-md-inline-block"
             >
             </i
             ><span class="contact_link"> Github; Carowa27</span></a
@@ -217,27 +223,17 @@
             title="LinkedIn Profile"
             class="no_underline"
             ><i
-              class="bi bi-linkedin contact_icon d-none d-sm-none d-lg-inline-block"
+              class="bi bi-linkedin contact_icon d-none d-sm-none d-md-inline-block"
             >
             </i
             ><span class="contact_link"> LinkedIn; Carolina Warntorp</span></a
-          >
-          <a
-            href="https://www.instagram.com/think.round/"
-            title="Instagram; ThinkRound"
-            class="no_underline"
-            ><i
-              class="bi bi-instagram contact_icon d-none d-sm-none d-lg-inline-block"
-            >
-            </i
-            ><span class="contact_link"> Instagram; ThinkRound</span></a
           >
           <a
             href="mailto:carolina.warntorp@medieinstitutet.se"
             title="Email me"
             class="no_underline"
             ><i
-              class="bi bi-envelope-fill contact_icon d-none d-sm-none d-lg-inline-block"
+              class="bi bi-envelope-fill contact_icon d-none d-sm-none d-md-inline-block"
             >
             </i
             ><span class="contact_link">
@@ -248,7 +244,7 @@
       </section>
       <!-- footer -->
       <footer class="row">
-        <article class="col-12 text-center py-2" id="footer">
+        <article class="col-12 text-center pt-2" id="footer">
           Carolina Warntorp &copy; 2022
         </article>
       </footer>
