@@ -141,7 +141,7 @@ article {
 .contact {
   font-size: 15pt;
   font-weight: 600;
-  color: rgba(76, 76, 76);
+  color: var(--headingsbold);
 }
 .contact_icon {
   font-size: 15pt;
